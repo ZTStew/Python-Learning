@@ -154,11 +154,21 @@ Expected Result :
 abs(number) -> number
 Return the absolute value of the argument.
 """
+# print(abs.__doc__)
+# print(print.__doc__)
+# print(int.__doc__)
+
+# print("this is a test", "hi", sep=":")
 
 """
 12. Write a Python program to print the calendar of a given month and year.
 Note : Use 'calendar' module.
 """
+# import calendar
+
+# year = int(input("Enter The Year: "))
+# month = int(input("Enter The Month: "))
+# print(calendar.month(year, month))
 
 """
 13. Write a Python program to print the following 'here document'.
@@ -168,68 +178,237 @@ This
 is a ....... multi-line
 heredoc string --------> example
 """
+# print("""
+# a string that you "don't" have to escape
+# This
+# is a  ....... multi-line
+# heredoc string --------> example
+# """)
 
 """
 14. Write a Python program to calculate number of days between two dates.
 Sample dates : (2014, 7, 2), (2014, 7, 11)
 Expected output : 9 days
 """
+# date1 = (2014, 7, 2)
+# date2 = (2014, 1, 11)
+
+# year_dif = abs(date1[0] - date2[0])
+# month_dif = abs(date1[1] - date2[1])
+# day_dif = abs(date1[2] - date2[2])
+
+# # print("year: " + str(year_dif))
+# # print("month: " + str(month_dif))
+# # print("day: " + str(day_dif))
+
+# print("The Difference Is: %s Day(s), %s Month(s), %s Year(s)" % (str(day_dif), str(month_dif), str(year_dif)))
+
+# from datetime import date
+
+# date1 = date(2014, 7, 2)
+# date2 = date(2014, 7, 11)
+# date_dif = date2 - date1
+# print(date_dif.days)
 
 """
 15. Write a Python program to get the volume of a sphere with radius 6.
+Volume = 4/3PIr^3
 """
+# import math
+
+# radius = 6
+# volume = 4/3 * (math.pi) * pow(radius, 3)
+# print(volume)
 
 """
 16. Write a Python program to get the difference between a given number and 17, if the number is greater than 17 return double the absolute difference.
 """
+# compaired_num = 17
+# # num = 2
+# num = int(input("Enter A Number: "))
+
+# dif = abs(compaired_num - num)
+
+# if num > 17:
+#   dif = dif * 2
+
+# print(dif)
 
 """
 17. Write a Python program to test whether a number is within 100 of 1000 or 2000.
 """
+# num = int(input("Enter A Number: "))
+
+# if abs(1000 - num) <= 100 or abs(2000 - num <= 100):
+#   print("Value Within 100 of 1000 or 2000")
+# else:
+#   print("Value is not within 1000 or 2000")
 
 """
 18. Write a Python program to calculate the sum of three given numbers, if the values are equal then return three times of their sum.
 """
+# # num = [5, 7, 9]
+# num = [3, 3, 3]
+
+# total = num[0] + num[1] + num[2]
+
+# if num[0] == num[1] and num[0] == num[2]:
+#   total *= 3
+
+# print(total)
+
 
 """
 19. Write a Python program to get a new string from a given string where "Is" has been added to the front. If the given string already begins with "Is" then return the string unchanged.
 """
+# # string = "test string here"
+# # string = "is test string here"
+# # string = ", test string here"
+# string = "is, test string here"
+
+# string = string.strip()
+
+# is_check = string.split()
+
+# if not "is" in is_check[0]:
+#   string = "Is " + string
+
+# print(string)
+
+
+# string = "test string here"
+# # string = "is test string here"
+# # string = ", test string here"
+# # string = "is, test string here"
+
+# if len(string) >= 2 and string[:2] == "is":
+#   pass
+# else:
+#   string = "is" + string
+
+# print(string)
 
 """
 20. Write a Python program to get a string which is n (non-negative integer) copies of a given string.
 """
+# string = ".test"
+# copies = 3
+
+# total = string*copies
+
+# print(total)
+
 
 """
 21. Write a Python program to find whether a given number (accept from the user) is even or odd, print out an appropriate message to the user.
 """
+# num = int(input("Enter Number: "))
+# if num % 2 == 0:
+#   print("EVEN")
+# else:
+#   print("ODD")
 
 """
 22. Write a Python program to count the number 4 in a given list.
 """
+# arr = [1, 4, 6, 7, 4]
+# count = 0
+
+# for i in range(len(arr)):
+#   if arr[i] == 4:
+#     count += 1
+
+# print(count)
 
 """
 23. Write a Python program to get the n (non-negative integer) copies of the first 2 characters of a given string. Return the n copies of the whole string if the length is less than 2.
 """
+# def no23(string, copy_count):
+#   if len(string) < 2:
+#     return string
+#   else:
+#     return string[:2] * copy_count
+
+# string = 'asdfghjkl;'
+# copy_count = 5
+
+# print(no23(string, copy_count))
 
 """
 24. Write a Python program to test whether a passed letter is a vowel or not.
 """
+# vowels = 'aeiou'
+# letter = input("Enter A Letter: ").lower()
+
+# if letter[0] in vowels:
+#   print("Vowel")
+# else:
+#   print("Noun")
 
 """
 25. Write a Python program to check whether a specified value is contained in a group of values.
 Test Data :
 3 -> [1, 5, 8, 3] : True
 -1 -> [1, 5, 8, 3] : False
-
 """
+# arr = [1, 5, 8, 3]
+# # search_val = 3
+# search_val = -1
+# flag = False
+
+# for i in range(len(arr)):
+#   if arr[i] == search_val:
+#     flag = True
+#     break
+
+# if flag:
+#   print("Array contains value: " + str(search_val))
+# else:
+#   print("Array does not contain value: " + str(search_val))
 
 """
 26. Write a Python program to create a histogram from a given list of integers.
 """
+# histogram = [2, 3, 6, 5]
+
+# for i in range(len(histogram)):
+#   print('*' * histogram[i])
+
+# print(histogram)
+
+# def get_max(arr):
+#   max = arr[0]
+
+#   for i in range(len(arr)):
+#     if arr[i] > max:
+#       max = arr[i]
+  
+#   return max
+
+# def display_histogram(arr, max):
+#   for i in range(max):
+#     string = " "
+#     for j in range(len(arr)):
+#       if arr[j] >= (max - i):
+#         string += "*"
+#       else:
+#         string += " "
+#       string += " "
+#     print(string)
+
+# display_histogram(histogram, get_max(histogram))
 
 """
 27. Write a Python program to concatenate all elements in a list into a string and return it.
 """
+# arr = ["hi", "there", "how", "goes", "it", "?"]
+# string = ""
+
+# for i in range(len(arr)):
+#   string += arr[i]
+
+# print(string)
+
 
 """
 28. Write a Python program to print all even numbers from a given numbers list in the same order and stop the printing if any numbers that come after 237 in the sequence.
@@ -242,6 +421,19 @@ numbers = [
     958,743, 527
     ]
 """
+# numbers = [    
+#   386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 
+#   399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 
+#   815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 
+#   958,743, 527
+# ]
+
+# for i in numbers:
+#   if i == 237:
+#     print(i)
+#     break
+#   elif i % 2 == 0:
+#     print(i)
 
 """
 29. Write a Python program to print out a set containing all the colors from color_list_1 which are not present in color_list_2.
