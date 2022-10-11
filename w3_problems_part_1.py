@@ -7,6 +7,16 @@
 ######################################################################################################################################################
 
 """
+Assessment: 
+    + good introduction to advanced strings concepts
+
+    - advanced strings
+    - multi-line strings
+    - escape commands
+    - Difficult to start with
+
+Rating: 2/5
+
 1. Write a Python program to print the following string in a specific format (see the output).
 Sample String : "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are" Output :
 
@@ -48,6 +58,14 @@ Twinkle, twinkle, little star,
 # print((" "*space) + word)
 
 """
+Assessment: 
+    + Good way to introduce system interactions with Python
+    
+    - too early to be taught
+    - contains data types
+
+Rating: 3/5
+
 2. Write a Python program to get the Python version you are using
 """
 # import sys, platform
@@ -59,6 +77,16 @@ Twinkle, twinkle, little star,
 # print("Your Python Version Is: " + platform.python_version())
 
 """
+Assessment: 
+    + Good way to introduce datetime
+    
+    - time tends to be confusing
+    - time difficult to work with
+    - uses methods
+    - first import should be Math
+
+Rating: 3/5
+
 3. Write a Python program to display the current date and time.
 Sample Output :
 Current date and time :
@@ -69,6 +97,15 @@ Current date and time :
 # print(datetime.datetime.now().strftime("%m/%d/%Y"))
 
 """
+Assessment: 
+    + Introduction to floats
+    + Good introduction to first import
+    + Good way to show basics of algorithms
+
+    - Possible concerns with variable type miss-match
+
+Rating: 4/5
+
 4. Write a Python program which accepts the radius of a circle from the user and compute the area.
 Sample Output :
 r = 1.1
@@ -81,13 +118,33 @@ Area = 3.8013271108436504
 # print("Area is: " + str(math.pi * pow(int(radius), 2)) + " " + measurement + "^2")
 
 """
+Assessment: 
+    + Good Introduction to user input
+    + Good Intorduction to order of opperations
+    + Good introduction to print statements
+    + Good introduction to variables
+
+    -
+
+Rating: 5/5
+
+
 5. Write a Python program which accepts the user's first and last name and print them in reverse order with a space between them.
 """
 # first_name = input("Enter First Name: ")
 # last_name = input("Enter Last Name: ")
 # print(last_name + " " + first_name)
+# print("this is a test" + input("enter"))
 
 """
+Assessment: 
+    + introduction to lists
+    + practical use of .split()
+
+    - introduces tuples before arrays
+
+Rating: 4/5
+
 6. Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers.
 Sample data : 3, 5, 7, 23
 Output :
@@ -103,6 +160,15 @@ Tuple : ('3', ' 5', ' 7', ' 23')
 # print(tuple(out))
 
 """
+Assessment: 
+    + Basic string sorting
+    + Introduction to file extensions
+    + introduces the idea of using [-1]
+
+    - making a truely functional version is highly complex
+
+Rating: 4/5
+
 7. Write a Python program to accept a filename from the user and print the extension of that.
 Sample filename : abc.java
 Output : java
@@ -115,6 +181,15 @@ Output : java
 # print("Your Extension is: " + extension[-1])
 
 """
+Assessment: 
+    + good intro to arrays
+    + makes use of formated strings
+    + makes use of index [0] and [-1]
+
+    - should not use color, could be confusing
+
+Rating: 4/5
+
 8. Write a Python program to display the first and last colors from the following list.
 color_list = ["Red","Green","White" ,"Black"]
 """
@@ -123,6 +198,13 @@ color_list = ["Red","Green","White" ,"Black"]
 # print("%s | %s"%(color_list[0], color_list[-1]))
 
 """
+Assessment: 
+    + good way to show uses of list objects
+
+    - confusing formatting
+
+Rating: 4/5
+
 9. Write a Python program to display the examination schedule. (extract the date from exam_st_date).
 exam_st_date = (11, 12, 2014)
 Sample Output : The examination will start from : 11 / 12 / 2014
@@ -131,6 +213,15 @@ Sample Output : The examination will start from : 11 / 12 / 2014
 # print("The examination will start from : %i / %i / %i"%exam_st_date)
 
 """
+Assessment: 
+    + good way to introduce different solutions to same problem
+    + proof logic
+
+    - confusing instructions
+    - casting
+
+Rating: 4/5
+
 10. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
 Sample value of n is 5
 Expected Result : 615
@@ -148,6 +239,13 @@ Expected Result : 615
 # print(ans)
 
 """
+Assessment: 
+    + 
+
+    -
+
+Rating: 4/5
+
 11. Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s).
 Sample function : abs()
 Expected Result :
@@ -161,6 +259,13 @@ Return the absolute value of the argument.
 # print("this is a test", "hi", sep=":")
 
 """
+Assessment: 
+    + 
+
+    -
+
+Rating: 4/5
+
 12. Write a Python program to print the calendar of a given month and year.
 Note : Use 'calendar' module.
 """
@@ -171,6 +276,13 @@ Note : Use 'calendar' module.
 # print(calendar.month(year, month))
 
 """
+Assessment: 
+    + 
+
+    -
+
+Rating: 4/5
+
 13. Write a Python program to print the following 'here document'.
 Sample string :
 a string that you "don't" have to escape
@@ -186,6 +298,13 @@ heredoc string --------> example
 # """)
 
 """
+Assessment: 
+    + 
+
+    -
+
+Rating: 4/5
+
 14. Write a Python program to calculate number of days between two dates.
 Sample dates : (2014, 7, 2), (2014, 7, 11)
 Expected output : 9 days
@@ -211,6 +330,13 @@ Expected output : 9 days
 # print(date_dif.days)
 
 """
+Assessment: 
+    + 
+
+    -
+
+Rating: 4/5
+
 15. Write a Python program to get the volume of a sphere with radius 6.
 Volume = 4/3PIr^3
 """
